@@ -1,0 +1,8 @@
+{
+  "name": "Investingo",
+  "description": "A Duolingo-style platform for investment learning, featuring an interactive skill tree, a paper trading simulator, and an AI-powered financial tutor.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

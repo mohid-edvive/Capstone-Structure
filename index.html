@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investingo - Learn to Invest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #ffffff;
+            color: #4b4b4b;
+            overflow-x: hidden;
+        }
+        /* The iconic Duo button depth */
+        .duo-btn-primary {
+            background-color: #1cb0f6;
+            border-bottom: 4px solid #1899d6;
+            color: white;
+            transition: all 0.1s;
+        }
+        .duo-btn-primary:active {
+            border-bottom-width: 0;
+            transform: translateY(4px);
+        }
+        .duo-btn-success {
+            background-color: #58cc02;
+            border-bottom: 4px solid #46a302;
+            color: white;
+            transition: all 0.1s;
+        }
+        .duo-btn-success:active {
+            border-bottom-width: 0;
+            transform: translateY(4px);
+        }
+        .duo-card {
+            border: 2px solid #e5e5e5;
+            border-bottom-width: 4px;
+            border-radius: 1rem;
+        }
+        /* Path View Zig-Zag Line */
+        .path-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 8px;
+            background: #e5e5e5;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 2s ease-in-out infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
